@@ -7,7 +7,10 @@
   <groupId>com.github.arsengir</groupId>
   <artifactId>network-chat</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <modules>
+        <module>network-chat-server</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>Network Chat</name>
   <url>https://github.com/arsengir/network-chat</url>
