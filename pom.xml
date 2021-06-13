@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.arsengir</groupId>
-  <artifactId>maven-template-repository</artifactId>
+  <artifactId>network-chat</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Maven Template</name>
-  <url>https://github.com/arsengir/repository-template-maven</url>
+  <name>Network Chat</name>
+  <url>https://github.com/arsengir/network-chat</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
