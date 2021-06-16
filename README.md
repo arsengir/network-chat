@@ -1,20 +1,17 @@
+### Сетевой чат
+
 ## Overview
-Repository with preconfigured maven project with junit5 configuration
-
-## Building
-...
-
-## Troubleshooting
-...
+Приложение для обмена текстовыми сообщениями по сети с помощью консоли между двумя и более пользователями.  
+Первое приложение - сервер чата.  
+Второе приложение - клиент чата, подключается к серверу чата и осуществляет доставку и получение новых сообщений.  
+Все сообщения записываются в log как на сервере, так и на клиентах.  
+Выход из чата осуществляется по команде exit. 
 
 ## Release Notes
 Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).
 
 ## Authors
 * Arsen Girinov - [arsengir](https://github.com/arsengir)
-
-## Acknowledgments
-...
 
 ## Contributing
 Please, follow [Contributing](CONTRIBUTING.md) page.
