@@ -1,2 +1,2 @@
 ## 1.0-SNAPSHOT
-*   Created template for new repositories.
+*   Создано приложение для обмена сообщениями по сети.
