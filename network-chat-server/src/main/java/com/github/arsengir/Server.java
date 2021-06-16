@@ -13,10 +13,8 @@ public class Server {
     private final ArrayList<ClientRunnable> CLIENTS = new ArrayList<>();
 
     public Server() {
-        ServerSocket serverSocket = null;
         Socket clientSocket = null;
-        try {
-            serverSocket = new ServerSocket(PORT);
+        try(ServerSocket serverSocket = new ServerSocket(PORT)) {
             log("Сервер запущен!");
             while (true) {
                 clientSocket = serverSocket.accept();
@@ -32,9 +30,6 @@ public class Server {
                     clientSocket.close();
                 }
                 log("Сервер остановлен.");
-                if (serverSocket != null) {
-                    serverSocket.close();
-                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -73,7 +68,7 @@ public class Server {
     }
 
 
-    public void sendMessageToAllClients(String msg, ClientRunnable thisClient) {
+    public synchronized void sendMessageToAllClients(String msg, ClientRunnable thisClient) {
         log(msg);
         for (ClientRunnable client : CLIENTS) {
             if (client != thisClient) {

@@ -9,6 +9,7 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>network-chat-server</module>
+        <module>network-chat-client</module>
     </modules>
     <packaging>pom</packaging>
 
